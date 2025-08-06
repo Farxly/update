@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Farxly</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg"></canvas>
+
+  <audio id="bg-music" autoplay loop>
+    <source src="https://files.catbox.moe/k8gbps.mp3" type="audio/mpeg" />
+  </audio>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const audio = document.getElementById('bg-music');
+      audio.play().catch(() => {});
+    });
+  </script>
+
+  <nav class="navbar">
+    <button onclick="scrollToSection('profile')">Profil</button>
+    <button onclick="scrollToSection('projects')">Project</button>
+    <button onclick="scrollToSection('services')">Produk</button>
+    <button onclick="scrollToSection('contact')">Kontak</button>
+  </nav>
+
+  <main>
+    <section id="profile" class="section">
+      <img src="https://files.catbox.moe/7s0q1k.jpeg" alt="Foto Farxly" class="profile-pic" />
+      <h1>Farxly</h1>
+      <p class="dob">Tanggal Lahir: 11 Mei 2011</p>
+      <p class="desc">
+        Nama gua Farxly. Bukan anak biasa. Sejak kecil udah ngoprek terminal, ngebongkar skrip, 
+        dan nyatuin piksel jadi karya. Di balik layar hitam dan huruf neon, ada ribuan ide gua yang 
+        siap dijadiin realita.
+        <br><br>
+        Gua bukan cuma bikin. Gua nyentuh semua. Dari bikin bot WA yang bisa ngobrol kayak manusia, 
+        web yang dark dan ngeblow otak, sampai project-project iseng yang ujungnya jadi viral.
+        <br><br>
+        “Arang bukan buat nyala terang, tapi pas kena percikan... dia yang nyulut segalanya.”
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Project</h2>
+      <div class="project">
+        <img src="https://files.catbox.moe/gcd1wo.jpeg" class="project-img" />
+        <h3>Script Bot WhatsApp</h3>
+        <p>Bot otomatisasi WA yang responsif, modular, bisa command pakai prefix atau button. Cocok buat bisnis, komunitas, bahkan buat seru-seruan di grup.</p>
+      </div>
+      <div class="project">
+        <img src="https://files.catbox.moe/rwj4gn.jpeg" class="project-img" />
+        <h3>DDoS Tools (Legal Use)</h3>
+        <p>Tool buat tes ketahanan server lo secara offline/internal. Bukan buat jahat, tapi buat bantu admin ngerti batas sistem mereka.</p>
+      </div>
+      <div class="project">
+        <img src="https://files.catbox.moe/c95u9j.jpeg" class="project-img" />
+        <h3>Game Developer</h3>
+        <p>Gua juga ngoding game, dari yang lucu, pixel-art, sampe simulasi gelap dengan logika berat. Passion gua nggak berhenti di satu sisi layar.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Produk & Layanan</h2>
+      <div class="service">
+        <h3>🟢 Pembuatan Bot WhatsApp</h3>
+        <ul>
+          <li>Custom command dan fitur premium</li>
+          <li>Integrasi API, database, auto-reply</li>
+          <li>UI berbasis tombol dan menu kekinian</li>
+        </ul>
+      </div>
+      <div class="service">
+        <h3>🛡️ Proteksi & Pengujian DDoS</h3>
+        <ul>
+          <li>Simulasi serangan legal dan aman</li>
+          <li>Cek performa dan log server</li>
+          <li>Debug traffic dengan analisa real-time</li>
+        </ul>
+      </div>
+      <div class="service">
+        <h3>🌐 Pembuatan Website</h3>
+        <ul>
+          <li>Dark/neon mode, mobile responsive</li>
+          <li>Web static atau dinamis</li>
+          <li>Desain unik sesuai style lo sendiri</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Kontak</h2>
+      <p>Kalo lo butuh partner coding, designer backend, atau cuma mau ngobrol soal sistem & jaringan... klik aja:</p>
+      <a href="https://wa.me/62881037400856" class="whatsapp-business">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="20" />
+        Hubungi via WhatsApp Bisnis
+      </a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="background.js"></script>
+</body>
+</html>
